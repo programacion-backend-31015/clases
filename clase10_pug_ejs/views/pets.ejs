@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <%- include('./partials/head') %>
+</head>
+<body>
+    <h2><%= mensaje %> </h2>
+
+    <ul>
+        <% if (pets.length > 0) { %>
+            <% pets.forEach(function(pet) { %>
+                <li>
+                    <strong><%= pet.name %></strong>
+                    <i><%= pet.animal %></i>
+                    y tiene <%= pet.months %> meses.
+                </li>
+            <% }) %> 
+        <% } else { %>
+            <i>No hay mascotas</i>
+        <% } %>
+    </ul>
+</body>
+</html>

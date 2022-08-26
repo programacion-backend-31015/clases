@@ -1,0 +1,74 @@
+{
+    "entities": {
+        "authors": {
+            "1": {
+                "id": 1,
+                "name": "George Orwel",
+                "ciudad": "Buenos aires"
+            },
+            "2": {
+                "id": 2,
+                "name": "JKL Rownling",
+                "ciudad": "Mexico"
+            },
+            "3": {
+                "id": 3,
+                "name": "R2",
+                "ciudad": "Colombia"
+            }
+        },
+        "comments": {
+            "1": {
+                "id": 1,
+                "comment": "Good book",
+                "person": 2
+            },
+            "2": {
+                "id": 2,
+                "comment": "Pffff",
+                "person": 3
+            },
+            "3": {
+                "id": 3,
+                "comment": "Pffff",
+                "person": 2
+            }
+        },
+        "books": {
+            "1": {
+                "id": 1,
+                "title": "1984",
+                "description": "Autoridad",
+                "content": "Bla bla bla",
+                "autor": 1,
+                "comments": [
+                    1,
+                    2
+                ]
+            },
+            "2": {
+                "id": 2,
+                "title": "Rebelio en la granja",
+                "description": "aaaa",
+                "content": "Bla bla bla",
+                "autor": 1,
+                "comments": []
+            },
+            "3": {
+                "id": 3,
+                "title": "HP piedra filosofal",
+                "description": "aaaa",
+                "content": "Bla bla bla",
+                "autor": 2,
+                "comments": [
+                    3
+                ]
+            }
+        }
+    },
+    "result": [
+        1,
+        2,
+        3
+    ]
+}

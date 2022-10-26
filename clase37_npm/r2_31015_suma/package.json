@@ -1,0 +1,12 @@
+{
+  "name": "@arturoverbel/r2_31015_suma",
+  "version": "1.0.0",
+  "description": "Just sum",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": ["suma"],
+  "author": "R2",
+  "license": "ISC"
+}

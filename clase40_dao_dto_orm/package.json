@@ -1,0 +1,16 @@
+{
+  "name": "clase40_dao_dto_orm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "minimist": "^1.2.7",
+    "mongoose": "^6.7.1"
+  }
+}

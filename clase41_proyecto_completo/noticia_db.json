@@ -1,0 +1,22 @@
+[
+	{
+		"title": "Genocidio",
+		"body": "Hombre locol hace genicidio",
+		"author": "Gustavo",
+		"imagen": "url.png",
+		"email": "email@email.com",
+		"views": 12,
+		"_id": 1,
+		"datetime": "11/8/2022, 8:56:34 PM"
+	},
+	{
+		"title": "Genocidio",
+		"body": "Hombre locol hace genicidio",
+		"author": "Gustavo",
+		"imagen": "url.png",
+		"email": "email@email.com",
+		"views": 12,
+		"_id": 2,
+		"datetime": "11/8/2022, 8:56:42 PM"
+	}
+]

@@ -1,0 +1,82 @@
+components:
+  schemas:
+    Product:
+      type: object
+      required:
+        - id
+        - title
+        - price
+        - thumbnail
+      properties:
+        id:
+          type: string
+          description: El ID es autogenerado
+        title:
+          type: string
+          description: Description del producto
+        price:
+          type: number
+          description: Precio del producto
+        thumbnail:
+          type: string
+          description: URL imagen del producto
+      example:
+        id: 12312asdasd123asd
+        title: Beers
+        price: 120
+        thumbnail: http://photo.url.png
+  requestBodies:
+    NewProduct:
+      type: object
+      required:
+        - title
+        - price
+        - thumbnail
+      properties:
+        title:
+          type: string
+          description: Description del producto
+        price:
+          type: number
+          description: Precio del producto
+        thumbnail:
+          type: string
+          description: URL imagen del producto
+      example:
+        title: Beer
+        price: 120
+        thumbnail: http://photo.url.png
+paths:
+    /products:
+      post:
+        summary: Create new product
+        tags:
+          - products
+          - create
+        requestBody:
+          require: true
+          content:
+            application/json:
+              schema:
+                $ref: '#/components/requestBodies/NewProduct'
+        responses:
+          "201":
+            description: El producto ha sido creado
+            content:
+              application/json:
+                schema:
+                  $ref: '#/components/schemas/Product'
+      get:
+        summary: Obtener los productos
+        tags:
+          - products
+          - getter
+        responses:
+          "200":
+            description: Cada producto disponible
+            content:
+              application/json:
+                schema:
+                  type: array
+                  itemps:
+                    $ref: '#/components/schemas/Product'
